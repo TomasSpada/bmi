@@ -11,20 +11,8 @@ int main()
     scanf("%f", &altura);
 
     resultado= peso/(altura*altura);
-    printf("su BMI es de %.1f \n",resultado);
-    
-    if(resultado < 18.5){
-        printf("Usted tiene un peso inferior al normal");
-    }
-    else if (resultado < 24.9){
-         printf("Usted tiene un peso normal");
-    }
-    else if (resultado < 29.9){
-         printf("Usted tiene sobrepeso");
-    }
-    else{
-         printf("Usted presenta obesidad");
-    }
+    printf("Su índice de masa corporal es %.1f \n",resultado);
+    printf("Índice| Condición \n----------------------------- \n<18.5 | Bajo peso \n18.5 a 24.9 | Normal \n25.0 a 29.9 | Sobrepeso \n>=30| Obesidad");
 
     return 0;
 }
