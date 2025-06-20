@@ -2,15 +2,21 @@
 
 int main()
 {
-	int peso;
+	float peso;
 	float altura;
 	float resultado;
 	printf("Ingrese su peso en kilogramos:"); 
-	scanf("%d", &peso);
+	scanf("%f", &peso);
+	while(peso<0){
+		printf("No se permiten los numeros negativos, ingrese un numero valido: "); 
+		scanf("%f", &peso);}
 	printf("Ingrese su altura en metros:");
 	scanf("%f", &altura);
+	while(altura<0){
+		printf("No se permiten los numeros negativos; ingrese un numero valido: "); 
+		scanf("%f", &altura);}
 	
-	resultado = peso/(altura*altura);
+	resultado = (float) peso/(altura*altura);
 	printf("Su índice de masa corporal es %.1f \n",resultado);
 	printf("indice | Condición\n");
 	printf("-----------------------------\n");
